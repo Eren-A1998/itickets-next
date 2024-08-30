@@ -1,3 +1,4 @@
+import logo from "@/appImages/logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
 import CustomButton from "./form/CustomButton";
@@ -15,7 +16,7 @@ export default function Header({}: Props) {
         className={`hidden md:flex justify-between bg-DarkBlue text-white font-sans text-sm px-16 py-4`}
       >
         <div className="w-50">
-          <img alt="logo" src="/Assets/Images/logo.png" />
+          <img alt="logo" src={logo.src} />
         </div>
 
         <div className="grid grid-flow-col items-center gap-x-5 text-DarkGray">
