@@ -42,7 +42,7 @@ export default function HomeHeader({}: Props) {
             placeholder="Search by category, Or product..."
           />
         </div>
-        <CustomButton className="btn">search</CustomButton>
+        <CustomButton className="primary_btn w-fit">search</CustomButton>
       </div>
     </div>
   );

@@ -9,9 +9,6 @@
   .secondary_btn {
     @apply bg-white px-3 py-1.5 text-black hover:bg-purple hover:bg-opacity-20 border transition-colors duration-300 ease-in-out w-full;
   }
-  .btn {
-    @apply bg-purple px-3 py-1.5 text-white;
-  }
   .section_padding {
     @apply px-5 md:px-16 py-8;
   }

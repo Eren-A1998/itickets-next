@@ -29,7 +29,7 @@ export default function Header({}: Props) {
 
         <div className="flex gap-x-3 justify-center items-center">
           <CustomButton>Sign Up</CustomButton>
-          <CustomButton className="btn">LOGIN</CustomButton>
+          <CustomButton className="primary_btn w-fit">LOGIN</CustomButton>
         </div>
       </div>
     </div>

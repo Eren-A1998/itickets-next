@@ -10,7 +10,7 @@ type Props = {
 
 export default function ProductInfo({ product }: Props) {
   return (
-    <div className="rounded-lg p-6 bg-white  sticky top-5 white-container min-h-64 h-full flex flex-col justify-between">
+    <div className="rounded-lg p-6 bg-white h-full flex flex-col justify-between">
       <div>
         {/* name , share , fav */}
         <div className="flex justify-between gap-x-5 w-full mb-5">

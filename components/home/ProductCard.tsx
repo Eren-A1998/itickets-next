@@ -20,7 +20,7 @@ export default function ProductCard({ product }: Props) {
             onClick={() => {
               router.push(`/product/${product.id}`);
             }}
-            className="btn"
+            className="primary_btn w-fit"
           >
             Show Details
           </button>

@@ -2,9 +2,9 @@ import Offline from "@/appIcons/offline.svg";
 import { useRouter } from "next/navigation";
 import CustomButton from "./form/CustomButton";
 
-type Props = { containerClass?: string };
+type Props = {};
 
-export default function OfflineComponent({ containerClass = "" }: Props) {
+export default function OfflineComponent({}: Props) {
   const router = useRouter();
   return (
     <div
