@@ -25,7 +25,7 @@ export default function CategoriesTabs({
       }}
     >
       {categories.map((itm) => {
-        return <Tab label={itm.name} />;
+        return <Tab label={itm.name} key={itm.id} />;
       })}
     </Tabs>
   );

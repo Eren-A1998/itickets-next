@@ -8,7 +8,7 @@ export default function OfflineComponent({}: Props) {
   const router = useRouter();
   return (
     <div
-      className={`text-salla-primary-text flex flex-col justify-center items-center gap-y-10 min-h-screen py-10 section_padding ${containerClass}`}
+      className={`text-salla-primary-text flex flex-col justify-center items-center gap-y-10 min-h-screen py-10 section_padding`}
     >
       <div className="w-full max-w-xs h-96">
         <Offline className="w-full h-full" />
