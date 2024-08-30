@@ -1,3 +1,4 @@
+import Search from "@/appIcons/search.svg";
 import CustomButton from "@/components/form/CustomButton";
 
 type Props = {};
@@ -32,11 +33,7 @@ export default function HomeHeader({}: Props) {
 
       <div className="flex justify-between gap-x-3 bg-transparentGrey bg-opacity-50 absolute bottom-24 right-16 md:right-56 left-16  py-6 px-4 ">
         <div className="flex items-center gap-x-3 w-full">
-          <img
-            className="w-5 h-5"
-            alt="search"
-            src="/Assets/Icons/search.svg"
-          />
+          <Search className="w-5 h-5" />
           <input
             className="bg-transparent outline-none w-5/6"
             placeholder="Search by category, Or product..."

@@ -5,6 +5,16 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 // import BorderLine from './BorderLine';
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 
+// payment methods
+import logo from "@/appImages/logo.png";
+import Master from "@/appImages/master.png";
+import Paypal from "@/appImages/paypal.png";
+import Visa from "@/appImages/visa.png";
+
+//download app
+import appStore from "@/appImages/AppStore.png";
+import googlePlay from "@/appImages/GooglePlay.png";
+
 type Props = {};
 
 export default function Footer({}: Props) {
@@ -32,7 +42,7 @@ export default function Footer({}: Props) {
             <button className="mb-1.5 block">My Tickets</button>
           </div>
         </div>
-        {/* <BorderLine className="inline md:hidden my-3" /> */}
+
         <div className="col-span-5 sm:col-span-2 lg:col-span-1">
           <p className="mb-3 text-white">CONNECT</p>
           <div className="">
@@ -40,7 +50,6 @@ export default function Footer({}: Props) {
               <FacebookIcon /> Facebook
             </button>
             <button className="mb-1.5 block">
-              {" "}
               <InstagramIcon className="pr-1" /> Instagram
             </button>
             <button className="mb-1.5 block">
@@ -67,36 +76,27 @@ export default function Footer({}: Props) {
           <p className="mb-3 text-white">Download our app</p>
           <div className="flex gap-x-2">
             <div>
-              <img alt="app store" src="/Assets/Images/AppStore.png" />
+              <img alt="app store" src={appStore.src} />
             </div>
             <div>
-              <img alt="google play" src="/Assets/Images/GooglePlay.png" />
+              <img alt="google play" src={googlePlay.src} />
             </div>
           </div>
         </div>
       </div>
-      {/* <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          <Grid item xs={6} md={2}></Grid>
-          <Grid item xs={6} md={2}></Grid>
-
-          <Grid item xs={6} md={4}></Grid>
-          <Grid item xs={5} md={4}></Grid>
-        </Grid> */}
-
-      {/* <BorderLine className="bg-DarkerGrey my-3" /> */}
 
       <div className="flex flex-col md:flex-row items-center justify-between text-grey gap-3  pb-5">
         <div className="flex items-center text-sm gap-x-2">
           <div>
-            <img alt="logo" src="/Assets/Images/logo.png" />
+            <img alt="logo" src={logo.src} />
           </div>
           <p>© 2021 iticket. All rights reserved.</p>
         </div>
 
         <div className="flex gap-x-2">
-          <img className="h-3" src={`/assets/images/master.png`} alt="master" />
-          <img className="h-3" src="/assets/images/paypal.png" alt="paypal" />
-          <img className="h-3" src="/assets/images/visa.png" alt="visa" />
+          <img className="h-3" src={Master.src} alt="master" />
+          <img className="h-3" src={Paypal.src} alt="paypal" />
+          <img className="h-3" src={Visa.src} alt="visa" />
         </div>
       </div>
     </div>
