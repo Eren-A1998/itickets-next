@@ -1,10 +1,10 @@
-import Section1 from "@/components/home/Section1";
+import HomeHeader from "@/components/home/HomeHeader";
 import UpcomingEvents from "@/components/home/UpcomingEvents";
 
 export default function Home() {
   return (
     <div>
-      <Section1 />
+      <HomeHeader />
       <UpcomingEvents />
     </div>
   );

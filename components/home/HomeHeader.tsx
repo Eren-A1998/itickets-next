@@ -2,22 +2,22 @@ import CustomButton from "@/components/form/CustomButton";
 
 type Props = {};
 
-export default function Section1({}: Props) {
+export default function HomeHeader({}: Props) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2  gap-x-2 bg-DarkBlue text-white relative p-16">
       <div className="mb-10 mt-2 order-2 md:order-1">
         <p className="font-bold text-2xl mb-6 gradText">
-          Let’s find your event!
+          Let’s find what you need!
         </p>
         <p className="font-bold font-mono text-2xl md:text-6xl mb-10">
-          Best Place to Find Events You <span>Love.</span>
+          Best Place to Find everything You need
         </p>
         {/* <div className='flex justify-end'>
                     <img className='h-5' alt='img2' src='/Assets/Images/twolines.png' />
                 </div> */}
         <p className="text-grey text-xs">
-          iticket is a platform that helps you find events near you, because we
-          know it’s hard to find. Find yours now!
+          iticket is an online shopping platform that helps you find all you
+          need in one place.
         </p>
         <div className="h-24"></div>
       </div>
@@ -39,10 +39,10 @@ export default function Section1({}: Props) {
           />
           <input
             className="bg-transparent outline-none w-5/6"
-            placeholder="Search by events, Concerts, Or Venue..."
+            placeholder="Search by category, Or product..."
           />
         </div>
-        <CustomButton className="btn">Discover</CustomButton>
+        <CustomButton className="btn">search</CustomButton>
       </div>
     </div>
   );

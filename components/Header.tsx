@@ -1,4 +1,5 @@
 import MenuIcon from "@mui/icons-material/Menu";
+import Link from "next/link";
 import CustomButton from "./form/CustomButton";
 
 type Props = {};
@@ -18,10 +19,12 @@ export default function Header({}: Props) {
         </div>
 
         <div className="grid grid-flow-col items-center gap-x-5 text-DarkGray">
-          <CustomButton className="text-white">Home</CustomButton>
-          <CustomButton>Browse Events</CustomButton>
+          <Link className="text-white" href={"/"}>
+            Home
+          </Link>
+          {/* <CustomButton>Browse Events</CustomButton>
           <CustomButton>Support</CustomButton>
-          <CustomButton>About Us</CustomButton>
+          <CustomButton>About Us</CustomButton> */}
         </div>
 
         <div className="flex gap-x-3 justify-center items-center">

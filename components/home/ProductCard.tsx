@@ -7,7 +7,7 @@ type Props = {
   product: Product;
 };
 
-export default function EventCard({ product }: Props) {
+export default function ProductCard({ product }: Props) {
   const router = useRouter();
   return (
     <div>
