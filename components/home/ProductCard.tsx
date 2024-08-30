@@ -18,7 +18,7 @@ export default function ProductCard({ product }: Props) {
         <div className="hidden h-full w-full group-hover:flex animate-slide-in-down items-center justify-center absolute top-0 bg-DarkBlue bg-opacity-70 ">
           <button
             onClick={() => {
-              router.push("/eventDetails");
+              router.push(`/product/${product.id}`);
             }}
             className="btn"
           >

@@ -26,7 +26,7 @@ export default function HomeHeader({}: Props) {
         <img
           className="shadow-custom lg:w-2/3 w-full h-44 md:h-auto md:max-w-lg"
           alt="img1"
-          src="/Assets/Images/img1.png"
+          src="/assets/images/home-header.jpg"
         />
       </div>
 
