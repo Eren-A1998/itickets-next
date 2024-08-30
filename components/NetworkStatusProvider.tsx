@@ -1,6 +1,7 @@
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
+import OfflineComponent from "./OfflineComponent";
 
 type Props = { children: ReactNode };
 
@@ -20,5 +21,5 @@ export default function NetworkStatusProvider({ children }: Props) {
       window.removeEventListener("offline", handleOnlineStatus);
     };
   }, []);
-  return isOnline ? children : <p>loading</p>;
+  return isOnline ? children : <OfflineComponent />;
 }

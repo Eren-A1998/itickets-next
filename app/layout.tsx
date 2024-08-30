@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import NetworkStatusProvider from "@/components/NetworkStatusProvider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -22,9 +23,11 @@ export default function RootLayout({
         className={`flex min-h-screen flex-col items-center justify-between`}
       >
         <Header />
-        <main className="min-h-32 max-w-screen-2xl grow w-full">
-          {children}
-        </main>
+        <NetworkStatusProvider>
+          <main className="min-h-32 max-w-screen-2xl grow w-full">
+            {children}
+          </main>
+        </NetworkStatusProvider>
         <Footer />
       </body>
     </html>
